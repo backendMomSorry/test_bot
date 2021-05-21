@@ -1,0 +1,20 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.21'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    implementation group: 'org.telegram', name: 'telegrambots', version: '5.2.0'
+    implementation group: 'org.telegram', name: 'telegrambotsextensions', version: '5.2.0'
+    implementation "org.hibernate:hibernate-core:5.4.31.Final"
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.5.1'
+//    implementation group: 'org.springframework', name: 'spring-web', version: '5.0.1.RELEASE'
+
+}
